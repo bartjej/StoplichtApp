@@ -11,6 +11,7 @@ import com.example.bart.stoplichtapp.R;
 import com.example.bart.stoplichtapp.models.CourseModel;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CourseListActivity extends AppCompatActivity {
@@ -33,11 +34,8 @@ public class CourseListActivity extends AppCompatActivity {
                                              }
                                          }
         );
-        courseModels.add(new CourseModel("IOPR1", "8", "10", "1"));
-        courseModels.add(new CourseModel("IOPR2", "6", "10", "3"));
-        courseModels.add(new CourseModel("IPMEDT4", "7", "10", "4"));
-        courseModels.add(new CourseModel("IMTD1", "3", "10", "2"));
-        courseModels.add(new CourseModel("IKSE", "7", "10", "3"));
+        courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
+        courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
         mAdapter = new CourseListAdapter(CourseListActivity.this, 0, courseModels);
         mListView.setAdapter(mAdapter);
     }

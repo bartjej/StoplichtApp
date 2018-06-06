@@ -1,25 +1,23 @@
 package com.example.bart.stoplichtapp.models;
 
+import java.util.Date;
+
 public class CourseModel {
 
-    private String vakCode;
-    private String aantalECTS;
-    private String cijfer;
-    private String periode;
+    private String bijeenkomstNaam;
+    private Date datum;
 
-    public CourseModel(String vc, String ae, String c, String p) {
-        this.vakCode = vc;
-        this.aantalECTS = ae;
-        this.cijfer = c;
-        this.periode = p;
+    public CourseModel(String bn, Date d) {
+        this.bijeenkomstNaam = bn;
+        this.datum = d;
     }
 
     public String getName(){
-        return vakCode;
+        return bijeenkomstNaam;
     }
 
     public String getEcts(){
-        return String.valueOf(aantalECTS);
+        return String.valueOf(datum);
     }
 
     // ADD GETTERS AND SETTERS - ONLY IF NEEDED !!}
