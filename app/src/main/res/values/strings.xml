@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StoplichtApp</string>
+    <string name="title_activity_lijst">lijst</string>
 </resources>
