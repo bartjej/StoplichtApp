@@ -1,12 +1,16 @@
 package com.example.bart.stoplichtapp.List;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.bart.stoplichtapp.Add_List_Item;
 import com.example.bart.stoplichtapp.R;
 import com.example.bart.stoplichtapp.models.CourseModel;
 
@@ -38,5 +42,14 @@ public class CourseListActivity extends AppCompatActivity {
         courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
         mAdapter = new CourseListAdapter(CourseListActivity.this, 0, courseModels);
         mListView.setAdapter(mAdapter);
+
     }
+
+    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+    
+    public void newListItem(View view) {
+        Intent addListItem = new Intent(this, Add_List_Item.class);
+        startActivity(addListItem);
+    }
+
 }
