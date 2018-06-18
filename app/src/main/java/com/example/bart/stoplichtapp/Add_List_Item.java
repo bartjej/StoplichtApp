@@ -19,12 +19,18 @@ public class Add_List_Item extends AppCompatActivity {
         EditText naamedit = (EditText) findViewById(R.id.editName);
         EditText infoedit = (EditText) findViewById(R.id.editInfo);
 
+        final String newnaam = naamedit.getText().toString();
+        final String newinfo = infoedit.getText().toString();
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent back = new Intent(Add_List_Item.this, CourseListActivity.class);
+                back.putExtra("newnaam", newnaam);
+                back.putExtra("newinfo", newinfo);
                 startActivity(back);
+                finish();
             }
         });
     }

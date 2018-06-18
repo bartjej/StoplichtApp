@@ -47,9 +47,19 @@ public class CourseListActivity extends AppCompatActivity {
                                                  String date = waarde2.toString();
                                                  showInfo.putExtra("date", date);
                                                  startActivity(showInfo);
+                                                 finish();
                                              }
                                          }
         );
+
+        Bundle newmodel = getIntent().getExtras();
+        if (newmodel != null) {
+            String naam = newmodel.getString("newnaam");
+            String info = newmodel.getString("newinfo");
+
+            courseModels.add(new CourseModel(naam ,new Date()));
+
+        }
         courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 3",new Date()));
