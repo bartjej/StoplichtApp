@@ -54,10 +54,9 @@ public class CourseListActivity extends AppCompatActivity {
 
         Bundle newmodel = getIntent().getExtras();
         if (newmodel != null) {
-            String naam = newmodel.getString("newnaam");
             String info = newmodel.getString("newinfo");
 
-            courseModels.add(new CourseModel(naam ,new Date()));
+            courseModels.add(new CourseModel(newmodel.getString("newnaam") ,new Date()));
 
         }
         courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
