@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bart.stoplichtapp.Add_List_Item;
@@ -33,23 +34,41 @@ public class CourseListActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                              @Override
                                              public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                                                 Toast t = Toast.makeText(CourseListActivity.this,"Click" + position,Toast.LENGTH_LONG);
-                                                 t.show();
+
+                                                 Intent showInfo = new Intent(CourseListActivity.this, ListItemInfo.class);
+
+                                                 TextView selected = (TextView) findViewById(R.id.subject_name);
+                                                 CharSequence waarde = selected.getText();
+                                                 TextView selected2 = (TextView) findViewById(R.id.subject_code);
+                                                 CharSequence waarde2 = selected2.getText();
+
+                                                 String naam = waarde.toString();
+                                                 showInfo.putExtra("name", naam);
+                                                 String date = waarde2.toString();
+                                                 showInfo.putExtra("date", date);
+                                                 startActivity(showInfo);
                                              }
                                          }
         );
         courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
+        courseModels.add(new CourseModel("bijeenkomst 3",new Date()));
         mAdapter = new CourseListAdapter(CourseListActivity.this, 0, courseModels);
         mListView.setAdapter(mAdapter);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new Button.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(CourseListActivity.this, Add_List_Item.class);
+                startActivity(i);
+
+            }
+
+        });
+
     }
 
-    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-    
-    public void newListItem(View view) {
-        Intent addListItem = new Intent(this, Add_List_Item.class);
-        startActivity(addListItem);
-    }
 
 }

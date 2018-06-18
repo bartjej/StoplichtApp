@@ -16,10 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".List.CourseListActivity"></activity>
+        <activity android:name=".List.CourseListActivity" />
         <activity
             android:name=".Add_List_Item"
             android:label="@string/title_activity_add__list__item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".List.ListItemInfo"
+            android:label="@string/title_activity_list_item_info"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

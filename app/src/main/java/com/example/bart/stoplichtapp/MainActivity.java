@@ -28,8 +28,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    public void naarLijst(View v){
-//        Intent intent = new Intent(this, CourseListActivity.class);
-//        startActivity(intent);
-//    }
 }
