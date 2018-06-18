@@ -38,6 +38,7 @@ public class ListItemInfo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent back = new Intent(ListItemInfo.this, CourseListActivity.class);
                 startActivity(back);
+                finish();
             }
         });
     }
