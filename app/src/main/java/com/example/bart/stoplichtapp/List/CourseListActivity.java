@@ -62,11 +62,6 @@ public class CourseListActivity extends AppCompatActivity {
         courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 3",new Date()));
-<<<<<<< HEAD
-        courseModels.add(new CourseModel("bijeenkomst 4",new Date()));
-        courseModels.add(new CourseModel("bijeenkomst 5",new Date()));
-=======
->>>>>>> 065c549a4b96ce33a5fca1e8a0b102b3178746b5
         mAdapter = new CourseListAdapter(CourseListActivity.this, 0, courseModels);
         mListView.setAdapter(mAdapter);
 
