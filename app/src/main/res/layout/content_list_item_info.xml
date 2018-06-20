@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".List.ListItemInfo"
+    tools:showIn="@layout/activity_list_item_info">
+
+    <TextView
+        android:id="@+id/nameTag"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="naam hier"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_createdat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Created At:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTag" />
+
+    <TextView
+        android:id="@+id/dateTag"
+        android:layout_width="284dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:text="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTag" />
+
+    <ImageButton
+        android:id="@+id/btn_green"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/green_eclipse" />
+
+    <ImageButton
+        android:id="@+id/btn_orange"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_red"
+        app:layout_constraintStart_toEndOf="@+id/btn_green"
+        app:srcCompat="@mipmap/orang_eclipse" />
+
+    <ImageButton
+        android:id="@+id/btn_red"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_orange"
+        app:srcCompat="@mipmap/red_eclipse" />
+
+    <TextView
+        android:id="@+id/inf_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Algemene Informatie:"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintBottom_toTopOf="@+id/inf_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_createdat" />
+
+    <TextView
+        android:id="@+id/inf_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="205dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="hier komt informatie"
+        app:layout_constraintBottom_toTopOf="@+id/btn_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inf_tag" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:src="@android:drawable/ic_menu_save"-->
+        <!--android:visibility="visible"-->
+        <!--tools:layout_editor_absoluteX="251dp"-->
+        <!--tools:layout_editor_absoluteY="455dp" />-->
+</android.support.constraint.ConstraintLayout>

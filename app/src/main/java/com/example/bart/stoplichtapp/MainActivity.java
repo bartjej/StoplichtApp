@@ -6,9 +6,13 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+=======
+import android.widget.Button;
+>>>>>>> 065c549a4b96ce33a5fca1e8a0b102b3178746b5
 
 import com.example.bart.stoplichtapp.List.CourseListActivity;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         mChildValueEditText = (EditText) findViewById(R.id.childValueEditText);
         mAddButton = (Button) findViewById(R.id.addButton);
         mRemoveButton = (Button) findViewById(R.id.removeButton);
@@ -99,4 +104,19 @@ public class MainActivity extends AppCompatActivity {
 //        Intent naarlijst = new Intent(this, CourseListActivity.class);
 //        startActivity(naarlijst);
 //    }
+=======
+        Button naarlijst = (Button) findViewById(R.id.button);
+        naarlijst.setOnClickListener(new Button.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, CourseListActivity.class);
+                startActivity(i);
+
+            }
+
+        });
+    }
+
+>>>>>>> 065c549a4b96ce33a5fca1e8a0b102b3178746b5
 }
