@@ -6,16 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/childValueEditText"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="524dp"
-        android:layout_height="270dp"
-        android:layout_marginBottom="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:contentDescription="lichtjes"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/removeButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@mipmap/stoplicht" />
 
     <Button

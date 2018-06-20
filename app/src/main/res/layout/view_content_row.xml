@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,5 +26,11 @@
         android:paddingTop="20dp"
         android:text=" EN DEZE TEXT OOK "
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float" />
 
 </LinearLayout>

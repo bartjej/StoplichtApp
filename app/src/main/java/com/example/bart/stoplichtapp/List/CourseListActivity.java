@@ -36,6 +36,9 @@ public class CourseListActivity extends AppCompatActivity {
         );
         courseModels.add(new CourseModel("bijeenkomst 1",new Date()));
         courseModels.add(new CourseModel("bijeenkomst 2",new Date()));
+        courseModels.add(new CourseModel("bijeenkomst 3",new Date()));
+        courseModels.add(new CourseModel("bijeenkomst 4",new Date()));
+        courseModels.add(new CourseModel("bijeenkomst 5",new Date()));
         mAdapter = new CourseListAdapter(CourseListActivity.this, 0, courseModels);
         mListView.setAdapter(mAdapter);
     }

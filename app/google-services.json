@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "773377658084",
+    "firebase_url": "https://eindproject-ikpmd.firebaseio.com",
+    "project_id": "eindproject-ikpmd",
+    "storage_bucket": "eindproject-ikpmd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773377658084:android:3a58cc4209aa9496",
+        "android_client_info": {
+          "package_name": "com.example.bart.stoplichtapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773377658084-o140s8k6n39aisafcopgu95se3mk7d0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bart.stoplichtapp",
+            "certificate_hash": "213783b71424724b7a34e97d58442d1099f161f7"
+          }
+        },
+        {
+          "client_id": "773377658084-5e16huh1trkpgjb4mfqeng4hiomlom1a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "773377658084-5e16huh1trkpgjb4mfqeng4hiomlom1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACMEH9Wp0uzdAviLWtOO4LurLmqtjvYMo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773377658084-5e16huh1trkpgjb4mfqeng4hiomlom1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
